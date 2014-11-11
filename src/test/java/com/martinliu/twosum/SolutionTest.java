@@ -18,11 +18,11 @@ public class SolutionTest {
         Solution s = new Solution();
         int[] input = {2, 7, 11, 15};
 
-        assertTrue(Arrays.equals(new int[]{1, 2}, s.twoSum(input, 9)));
-        assertTrue(Arrays.equals(new int[]{1, 3}, s.twoSum(input, 13)));
-        assertTrue(Arrays.equals(new int[]{1, 4}, s.twoSum(input, 17)));
-        assertTrue(Arrays.equals(new int[]{2, 3}, s.twoSum(input, 18)));
-        assertTrue(Arrays.equals(new int[]{2, 4}, s.twoSum(input, 22)));
-        assertTrue(Arrays.equals(new int[]{3, 4}, s.twoSum(input, 26)));
+        assertArrayEquals(new int[]{1, 2}, s.twoSum(input, 9));
+        assertArrayEquals(new int[]{1, 3}, s.twoSum(input, 13));
+        assertArrayEquals(new int[]{1, 4}, s.twoSum(input, 17));
+        assertArrayEquals(new int[]{2, 3}, s.twoSum(input, 18));
+        assertArrayEquals(new int[]{2, 4}, s.twoSum(input, 22));
+        assertArrayEquals(new int[]{3, 4}, s.twoSum(input, 26));
     }
 }

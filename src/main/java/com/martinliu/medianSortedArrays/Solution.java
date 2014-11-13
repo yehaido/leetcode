@@ -8,31 +8,24 @@ import java.util.*;
 public class Solution
 {
     public double findMedianSortedArrays(int A[], int B[]) {
+        int ret = 0;
         int lenA = A.length;
         int lenB = B.length;
-        int sum = lenA + lenB;
 
-        int i = (sum + 1)/2;
-        int[] union = new int[i + 1];
-        int iA = 0, iB = 0;
-        while (iA + iB < i + 1){
-            if (iA == lenA && iB == lenB){
-                break;
-            } else if (iA == lenA){
-                union[iA + iB] = B[iB];
-                iB++;
-            } else if (iB == lenB){
-                union[iA + iB] = A[iA];
-                iA++;
-            } else if (A[iA] <= B[iB]){
-                union[iA + iB] = A[iA];
-                iA++;
+        int iA = (lenA + 1)/2;
+        int iB = (lenB + 1)/2;
+
+        while (!stop(iA, iB)){
+            if (A[iA] == B[iB]){
+                ret = A[iA];
+            } else if (A[iA] > B[iB]){
+                iA = stepBack(A);
+                iB = stepOver(B);
             } else {
-                union[iA + iB] = B[iB];
-                iB++;
+                iA = stepOver(A);
+                iB = stepBack(B);
             }
         }
-
 
         if (sum % 2 == 0){
             // even
@@ -40,6 +33,44 @@ public class Solution
         } else {
             // odd
             return union[i - 1];
+        }
+    }
+
+    private boolean stop(int[] A, int[] B){
+
+    }
+
+    private boolean stepOver(int[] array){
+        (iA + iB + 1)/2
+            }
+
+    private boolean stepBack(int[] array){
+        (iA + iB - 1)/2
+            }
+
+    private class Step{
+        int left;
+        int right;
+        int curr;
+
+        Step(int left, int right){
+            this.left = left;
+            this.right = right;
+            this.curr = (this.left + this.right + 1)/2;
+        }
+
+        void stepOver(){
+            this.left = this.curr;
+            this.curr = (this.left + this.right + 1)/2;
+        }
+
+        void stepBack(){
+            this.right = this.curr;
+            this.curr = (this.left + this.right)/2;
+        }
+
+        void isDone(){
+
         }
     }
 }

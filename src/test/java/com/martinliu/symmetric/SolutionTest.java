@@ -25,7 +25,11 @@ public class SolutionTest {
 
         Solution solution = new Solution();
         assertTrue(solution.isSymmetric(root));
+        assertTrue(solution.isSymmetricIt(root));
+
+        TreeNode root2 = new TreeNode(1);
+        root2.left = new TreeNode(2);
+        assertFalse(solution.isSymmetric(root2));
+        assertFalse(solution.isSymmetricIt(root2));
     }
 }
-1 2 2 3 4 4 3 5 6 7 8 8 7 6 5
-1 2 2 # 3 3 #

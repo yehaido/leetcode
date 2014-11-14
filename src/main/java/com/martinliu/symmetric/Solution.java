@@ -30,10 +30,62 @@ import java.util.*;
 public class Solution
 {
     public boolean isSymmetric(TreeNode root) {
-        boolean bool = false;
-        if ()
+        if (root == null) return true;
+        return isSymmetric(root.left, root.right);
+    }
 
-        return bool;
+    // recursive version
+    public boolean isSymmetric(TreeNode left, TreeNode right){
+        if (left == right){
+            return true;
+        } else if (left != null && right != null && left.val == right.val){
+            return isSymmetric(left.left, right.right) && isSymmetric(left.right, right.left);
+        } else {
+            return false;
+        }
+    }
+
+    // iterated version
+    public boolean isSymmetricIt(TreeNode root){
+        if (root == null) return true;
+
+        List<TreeNode> nodes = new ArrayList<TreeNode>();
+        nodes.add(root.left);
+        nodes.add(root.right);
+
+        while (nodes.size() > 0){
+            List<TreeNode> tmpNodes = new ArrayList<TreeNode>();
+            int size = nodes.size();
+            if (size % 2 != 0){
+                return false;
+            }
+            for (int i = 0; i < size; i++){
+                TreeNode node = nodes.get(i);
+                TreeNode nodeR = nodes.get(size - i - 1);
+                int val = 0, valR = 0;
+                if (node != null){
+                    val = node.val;
+                }
+                if (nodeR != null){
+                    valR = nodeR.val;
+                }
+                if (val != valR){
+                    return false;
+                }
+
+                if (node != null && nodeR != null && node.val != nodeR.val){
+
+                }
+                if (node != null){
+                    tmpNodes.add(node.left);
+                }
+                if (node != null) {
+                    tmpNodes.add(node.right);
+                }
+            }
+            nodes = tmpNodes;
+        }
+        return true;
     }
 }
 
@@ -43,26 +95,5 @@ class TreeNode {
     TreeNode right;
     TreeNode(int x) {
         this.val = x;
-    }
-
-    public static TreeNode parse(Object[] serial){
-        TreeNode root = null;
-        TreeNode curr = null;
-        for (int i = 0; i < serial.length; i = i + 2){
-            try {
-                if (d == 0){
-                    root = new TreeNode(serial[i]);
-                } else {
-                    int valLeft = (int)serial[i - 1];
-                    int valRight = (int)serial[i];
-                    curr.left = new TreeNode(valLeft);
-                    curr.right = new TreeNode(valRight);
-                }
-            }
-            catch (Throwable e) {
-
-                continue;
-            }
-        }
     }
 }

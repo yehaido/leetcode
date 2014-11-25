@@ -16,5 +16,6 @@ Leetcode solutions in Java
 |[Remove Duplicates from Sorted Array](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array/)|[code](./src/main/java/com/martinliu/removeDuplicates/Solution.java)|2012-02-16|Easy|
 |[Merge Sorted Array](https://oj.leetcode.com/problems/merge-sorted-array/)	|[code](./src/main/java/com/martinliu/mergesortedarray/Solution.java)|2012-05-20|Easy|
 |[Symmetric Tree](https://oj.leetcode.com/problems/symmetric-tree/)	|[code](./src/main/java/com/martinliu/symmetric/Solution.java)|2012-09-23|Easy|
-|[Two Sum](https://oj.leetcode.com/problems/two-sum/)	|[code](./src/main/java/com/martinliu/twoSum/Solution.java)|2011-03-13|Medium|
+|[Two Sum](https://oj.leetcode.com/problems/two-sum/)	|[code](./src/main/java/com/martinliu/twosum/Solution.java)|2011-03-13|Medium|
 |[Median of Two Sorted Arrays](https://oj.leetcode.com/problems/median-of-two-sorted-arrays/)	|[code](./src/main/java/com/martinliu/medianSortedArrays/Solution.java)|2011-03-27|Hard|
+|[Pascal's Triangle](https://oj.leetcode.com/problems/pascals-triangle/)	|[code](./src/main/java/com/martinliu/pascals-triangle/Solution.java)|2012-10-28|easy|

@@ -25,3 +25,4 @@ Leetcode solutions in Java
 |[Pascal's Triangle II](https://oj.leetcode.com/problems/pascals-triangle-ii/)	|[code](./src/main/java/com/martinliu/pascals-triangle-ii/Solution.java)|2012-10-28|Easy|
 |[Minimum Depth of Binary Tree](https://oj.leetcode.com/problems/minimum-depth-of-binary-tree/)	|[code](./src/main/java/com/martinliu/minimum-depth-of-binary-tree/Solution.java)|2012-10-09|Easy|
 |[Length of Last Word](https://oj.leetcode.com/problems/length-of-last-word/)	|[code](./src/main/java/com/martinliu/length-of-last-word/Solution.java)|2012-03-27|Easy|
+|[Remove Nth Node From End of List](https://oj.leetcode.com/problems/remove-nth-node-from-end-of-list/)	|[code](./src/main/java/com/martinliu/remove-nth-node-from-end-of-list/Solution.java)|2012-01-27|Easy|

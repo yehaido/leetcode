@@ -20,3 +20,5 @@ Leetcode solutions in Java
 |[Median of Two Sorted Arrays](https://oj.leetcode.com/problems/median-of-two-sorted-arrays/)	|[code](./src/main/java/com/martinliu/medianSortedArrays/Solution.java)|2011-03-27|Hard|
 |[Pascal's Triangle](https://oj.leetcode.com/problems/pascals-triangle/)	|[code](./src/main/java/com/martinliu/pascals-triangle/Solution.java)|2012-10-28|Easy|
 |[Binary Tree Level Order Traversal II](https://oj.leetcode.com/problems/binary-tree-level-order-traversal-ii/)	|[code](./src/main/java/com/martinliu/levelOrderBottom/Solution.java)|2012-10-01|Easy|
+|[Path Sum](https://oj.leetcode.com/problems/path-sum/)	|[code](./src/main/java/com/martinliu/path-sum/Solution.java)|2012-10-13|Easy|
+|[Binary Tree Level Order Traversal](https://oj.leetcode.com/problems/binary-tree-level-order-traversal/)	|[code](./src/main/java/com/martinliu/binary-tree-level-order-traversal/Solution.java)|2012-09-28|Easy|

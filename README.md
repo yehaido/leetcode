@@ -22,3 +22,4 @@ Leetcode solutions in Java
 |[Binary Tree Level Order Traversal II](https://oj.leetcode.com/problems/binary-tree-level-order-traversal-ii/)	|[code](./src/main/java/com/martinliu/levelOrderBottom/Solution.java)|2012-10-01|Easy|
 |[Path Sum](https://oj.leetcode.com/problems/path-sum/)	|[code](./src/main/java/com/martinliu/path-sum/Solution.java)|2012-10-13|Easy|
 |[Binary Tree Level Order Traversal](https://oj.leetcode.com/problems/binary-tree-level-order-traversal/)	|[code](./src/main/java/com/martinliu/binary-tree-level-order-traversal/Solution.java)|2012-09-28|Easy|
+|[Pascal's Triangle II](https://oj.leetcode.com/problems/pascals-triangle-ii/)	|[code](./src/main/java/com/martinliu/pascals-triangle-ii/Solution.java)|2012-10-28|Easy|

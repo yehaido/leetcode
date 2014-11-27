@@ -25,6 +25,7 @@ public class SolutionTest {
         root.right.right = new TreeNode(7);
 
         List<List<Integer>> l = solution.levelOrder(root);
+
         assertTrue(l.get(0).get(0) == 3);
         assertTrue(l.get(1).get(0) == 9);
         assertTrue(l.get(2).get(1) == 7);

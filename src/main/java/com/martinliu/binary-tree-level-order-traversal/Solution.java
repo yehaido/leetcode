@@ -41,7 +41,6 @@ public class Solution
                 list.add(l);
                 arr = tmp;
             }
-            Collections.reverse(list);
         }
         return list;
 

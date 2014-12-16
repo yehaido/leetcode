@@ -28,3 +28,4 @@ Leetcode solutions in Java
 |[Remove Nth Node From End of List](https://oj.leetcode.com/problems/remove-nth-node-from-end-of-list/)	|[code](./src/main/java/com/martinliu/remove-nth-node-from-end-of-list/Solution.java)|2012-01-27|Easy|
 |[Palindrome Number](https://oj.leetcode.com/problems/palindrome-number/)	|[code](./src/main/java/com/martinliu/palindrome-number/Solution.java)|2012-01-04|Easy|
 |[Valid Parentheses](https://oj.leetcode.com/problems/valid-parentheses/)	|[code](./src/main/java/com/martinliu/valid-parentheses/Solution.java)|2012-01-30|Easy|
+|[Valid Sudoku](https://oj.leetcode.com/problems/valid-sudoku/)	|[code](./src/main/java/com/martinliu/valid-sudoku/Solution.java)|2012-03-03|Easy|

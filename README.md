@@ -29,3 +29,6 @@ Leetcode solutions in Java
 |[Palindrome Number](https://oj.leetcode.com/problems/palindrome-number/)	|[code](./src/main/java/com/martinliu/palindrome-number/Solution.java)|2012-01-04|Easy|
 |[Valid Parentheses](https://oj.leetcode.com/problems/valid-parentheses/)	|[code](./src/main/java/com/martinliu/valid-parentheses/Solution.java)|2012-01-30|Easy|
 |[Valid Sudoku](https://oj.leetcode.com/problems/valid-sudoku/)	|[code](./src/main/java/com/martinliu/valid-sudoku/Solution.java)|2012-03-03|Easy|
+|[Longest Common Prefix](https://oj.leetcode.com/problems/longest-common-prefix/)	|[code](./src/main/java/com/martinliu/longest-common-prefix/Solution.java)|2012-01-17|Easy|
+|[Intersection of Two Linked Lists](https://oj.leetcode.com/problems/intersection-of-two-linked-lists/)	|[code](./src/main/java/com/martinliu/intersection-of-two-linked-lists/Solution.java)|2014-11-27|Easy|
+|[Count and Say](https://oj.leetcode.com/problems/count-and-say/)	|[code](./src/main/java/com/martinliu/count-and-say/Solution.java)|2012-03-05|Easy|

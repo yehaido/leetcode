@@ -32,3 +32,4 @@ Leetcode solutions in Java
 |[Longest Common Prefix](https://oj.leetcode.com/problems/longest-common-prefix/)	|[code](./src/main/java/com/martinliu/longest-common-prefix/Solution.java)|2012-01-17|Easy|
 |[Intersection of Two Linked Lists](https://oj.leetcode.com/problems/intersection-of-two-linked-lists/)	|[code](./src/main/java/com/martinliu/intersection-of-two-linked-lists/Solution.java)|2014-11-27|Easy|
 |[Count and Say](https://oj.leetcode.com/problems/count-and-say/)	|[code](./src/main/java/com/martinliu/count-and-say/Solution.java)|2012-03-05|Easy|
+|[Add Binary](https://oj.leetcode.com/problems/add-binary/)	|[code](./src/main/java/com/martinliu/add-binary/Solution.java)|2012-04-02|Easy|

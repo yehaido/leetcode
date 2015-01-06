@@ -12,63 +12,30 @@ import java.util.*;
 public class Solution
 {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        return doAdd(l1, l2, 0);
+    }
+
+    private ListNode doAdd(ListNode l1, ListNode l2, int carry){
         if (l1 == null){
+            if (carry == 1){
+                l2 = doAdd(new ListNode(1), l2, 0);
+            }
             return l2;
         } else if (l2 == null){
+            if (carry == 1){
+                l1 = doAdd(l1, new ListNode(1), 0);
+            }
             return l1;
         } else {
-            ListNode curr1 = l1;
-            ListNode curr2 = l2;
-            int carry = 0;
-            int sum = 0;
-
-            ListNode ret = null;
-            ListNode curr = null;
-
-            while (!isDone(curr1, curr2, carry)){
-                sum = getSum(curr1, curr2, carry);
-                // check carry
-                carry = sum / 10;
-                // sum without carry
-                sum = sum % 10;
-
-                ListNode n = new ListNode(sum);
-
-                if (curr == null){
-                    // initial
-                    curr = n;
-                    ret = curr;
-                } else {
-                    curr.next = n;
-                    curr = curr.next;
-                }
-                if (curr1 != null){
-                    curr1 = curr1.next;
-                }
-                if (curr2 != null){
-                    curr2 = curr2.next;
-                }
-            }
-
-            return ret;
+            int sum = l1.val + l2.val + carry;
+            // check carry
+            carry = sum / 10;
+            // sum without carry
+            sum = sum % 10;
+            l1.val = sum;
+            l1.next = doAdd(l1.next, l2.next, carry);
+            return l1;
         }
-    }
-
-    private boolean isDone(ListNode curr1, ListNode curr2, int carry){
-        return curr1 == null && curr2 == null && carry == 0;
-    }
-
-    private int getSum(ListNode curr1, ListNode curr2, int carry){
-        int sum = 0;
-        // add vals and carry
-        if (curr1 != null){
-            sum += curr1.val;
-        }
-        if (curr2 != null){
-            sum += curr2.val;
-        }
-        sum += carry;
-        return sum;
     }
 }
 

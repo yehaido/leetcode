@@ -37,3 +37,4 @@ Leetcode solutions in Java
 |[Linked List Cycle](https://oj.leetcode.com/problems/linked-list-cycle/)	|[code](./src/main/java/com/martinliu/linked-list-cycle/Solution.java) |Easy|
 |[Excel Sheet Column Number](https://oj.leetcode.com/problems/excel-sheet-column-number/)	|[code](./src/main/java/com/martinliu/excel-sheet-column-number/Solution.java) |Easy|
 |[Add Two Numbers](https://oj.leetcode.com/problems/add-two-numbers/)	|[code](./src/main/java/com/martinliu/add-two-numbers/Solution.java) |Easy|
+|[Longest Substring Without Repeating Characters](https://oj.leetcode.com/problems/longest-substring-without-repeating-characters/)	|[code](./src/main/java/com/martinliu/longest-substring-without-repeating-characters/Solution.java) |Easy|

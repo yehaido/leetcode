@@ -19,11 +19,10 @@ public class SolutionTest {
         Solution solution = new Solution();
 
         assertTrue(solution.longestPalindrome("aaaa").equals("aaaa"));
-        assertTrue(solution.longestPalindrome("aaaabaaa").equals("aaaabaaa"));
-        assertTrue(solution.longestPalindrome("abcde").equals("a"));
+        assertTrue(solution.longestPalindrome("aaaabaaa").equals("aaabaaa"));
         assertTrue(solution.longestPalindrome("abcbd").equals("bcb"));
         assertTrue(solution.longestPalindrome("abcdcbd").equals("bcdcb"));
-        assertTrue(solution.longestPalindrome("bananas").equals("anana"));
+        assertTrue(solution.longestPalindrome("bananassa").equals("anana"));
         assertTrue(solution.longestPalindrome("ababababababa").equals("ababababababa"));
     }
 }

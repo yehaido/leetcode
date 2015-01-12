@@ -12,42 +12,38 @@ public class Solution
         } else if (s.length() == 1){
             return s;
         } else {
-            String pal = "";
-
-            int start = 0;
-            int end = 0;
-            boolean oneChar = true;
-
-            char[] chars = s.toCharArray();
-            for (int i = 1; i < chars.length; i++) {
+            // make {'a', 'b'} to {'#', 'a', '#', 'b', '#'} style
+            char[] chars = decorateChars(s.toCharArray());
+            int len = chars.length;
+            int retStart = 0;
+            int retEnd = 0;
+            for (int i = 0; i < len; i++) {
                 char c = chars[i];
-
-                if (oneChar && c == s.charAt(start)){
-                    ++end;
-                    // cover all of oneChar
-                    while (start > 0 && s.charAt(start - 1) == c){
-                        --start;
-                    }
-                } else if (start > 0 && s.charAt(start - 1) == c){
-                    --start;
-                    ++end;
-                    oneChar = false;
-                } else {
-                    // new circle
-                    if (end + 1 - start > pal.length()){
-                        pal = s.substring(start, end + 1);
-                    }
-                    // from end
-                    i = start = end = (start + end)/2 + 1;
-                    oneChar = true;
+                int left = i;
+                int right = i;
+                while (left > 0 && right < len - 1 && chars[right + 1] == chars[left - 1]){
+                    --left;
+                    ++right;
+                }
+                if (right - left > retEnd - retStart){
+                    retStart = left;
+                    retEnd = right;
                 }
             }
-            // last circle's end
-            if (end + 1 - start > pal.length()){
-                pal = s.substring(start, end + 1);
-            }
-
+            String pal = s.substring(retStart/2, retEnd/2);
             return pal;
         }
+    }
+
+    // make {'a', 'b'} to {'#', 'a', '#', 'b', '#'} style
+    private char[] decorateChars(char[] cs) {
+        char[] chars = new char[cs.length * 2 + 1];
+        chars[0] = '#';
+        int curr = 1;
+        for (char c : cs){
+            chars[curr++] = c;
+            chars[curr++] = '#';
+        }
+        return chars;
     }
 }
